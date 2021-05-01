@@ -4,32 +4,59 @@
 
 .nav .container {
    display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-.nav__logo {
+.nav .nav__logo {
    display: flex;
    justify-content: flex-start;
    align-items: center;
    flex: 1 1 30%;
 }
 
-.nav__menu {
+.nav .nav__menu,
+.nav .nav__menu .btn {
    display: flex;
    justify-content: flex-end;
-   align-items: center;
    flex: 1 1 70%;
-   font-weight: 300;
    font-size: 1.3rem;
 }
 
-.nav__menu .nav__links {
+.nav .nav__menu .nav__links {
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
 
 .nav__menu .nav__links .nav__link + .nav__link {
-   margin-left: 2.1em;
+   margin-left: 3.4em;
+}
+
+.nav__menu .nav__links .nav__link {
+   position: relative;
+   text-transform: uppercase;
+}
+
+.nav__menu .nav__links .nav__link::after,
+.nav__menu .nav__links .nav__link::after {
+   pointer-events: none;
+   content: '';
+   position: absolute;
+   top: 150%;
+   left: 0;
+   right: 99%;
+   height: 0.21em;
+   background: white;
+   opacity: 0;
+   transition: all 100ms ease-in-out;
+}
+
+.nav__menu .nav__links .nav__link:hover::after,
+.nav__menu .nav__links .nav__link:active::after,
+.nav__menu .nav__links .nav__link:focus::after {
+   opacity: 1;
+   right: 0;
 }
 
 .burger {
@@ -66,9 +93,9 @@
    }
 
    .nav .nav__menu .nav__links {
-      font-family: var(--raleway-light);
       font-weight: 300;
       flex-direction: column;
+      margin-right: 0.8em;
    }
 
    .nav__menu .nav__links .nav__link {
@@ -89,7 +116,7 @@
    }
 
    .burger.open .burger1 {
-      transform: rotate(45deg);
+      transform: rotate(45deg) translateY(4px);
    }
 
    .burger.open .burger2 {
@@ -97,6 +124,6 @@
    }
 
    .burger.open .burger3 {
-      transform: rotate(-45deg) translateY(-8px);
+      transform: rotate(-45deg) translateY(-4px);
    }
 }

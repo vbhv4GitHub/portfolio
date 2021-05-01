@@ -1,5 +1,5 @@
 .hero {
-   height: 100vh;
+   height: 90vh;
 }
 
 .hero #hero__background {
@@ -24,15 +24,17 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   flex-wrap: wrap;
 }
 
 .hero .container .hero__image,
 .hero .container .hero__intro {
    flex: 1 1 50%;
+   min-width: 300px;
 }
 
 .hero .container .hero__intro .btn-neon {
    position: absolute;
-   left: 80%;
-   top: 80%;
+   right: 10vw;
+   bottom: 10vh;
 }
