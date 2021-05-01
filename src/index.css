@@ -59,7 +59,7 @@
 html,
 body {
    font-family: 'PT Serif', serif;
-   background: var(--violet-1);
+   /* background: var(--violet-1); */
    color: var(--color-light);
    font-size: 0.854vw;
    scroll-behavior: smooth;
@@ -160,7 +160,7 @@ button:hover,
 button:focus {
    outline: none;
    cursor: pointer;
-   color: var(--blue-4);
+   color: var(--blue-5);
 }
 
 /* -----------------------------------------------------
@@ -180,6 +180,7 @@ button:focus {
 @media screen and (min-width: 1400px) {
    .container {
       padding: 0;
+      margin: 0 auto;
    }
 }
 
@@ -299,6 +300,15 @@ button:focus {
    color: var(--color-dark);
 }
 
+.btn.btn-neon:hover,
+.btn.btn-neon:focus {
+   background: var(--pink-1);
+   color: var(--violet-1);
+   border: var(--pink-1);
+   text-shadow: none;
+   border: 0.1em solid var(--pink-1);
+}
+
 .btn-neon:hover::after,
 .btn-neon:focus::after {
    opacity: 1;
@@ -307,14 +317,6 @@ button:focus {
 .btn-neon:hover::before,
 .btn-neon:focus::before {
    opacity: 1;
-}
-
-.btn.btn-neon:hover,
-.btn.btn-neon:focus {
-   background: var(--pink-1);
-   color: var(--violet-1);
-   border: var(--pink-1);
-   text-shadow: none;
 }
 
 /* ------------------ Animations ------------------ */

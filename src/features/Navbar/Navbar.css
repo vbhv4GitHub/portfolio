@@ -1,0 +1,102 @@
+.nav {
+   height: 10vh;
+}
+
+.nav .container {
+   display: flex;
+}
+
+.nav__logo {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   flex: 1 1 30%;
+}
+
+.nav__menu {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   flex: 1 1 70%;
+   font-weight: 300;
+   font-size: 1.3rem;
+}
+
+.nav__menu .nav__links {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav__menu .nav__links .nav__link + .nav__link {
+   margin-left: 2.1em;
+}
+
+.burger {
+   display: none;
+   pointer-events: none;
+   cursor: pointer;
+   z-index: 2;
+}
+
+.burger > * {
+   height: 0.1rem;
+   background: white;
+   width: 2rem;
+   opacity: 1;
+   margin-bottom: 0.3rem;
+   transition: all 0.3s ease-in;
+}
+
+@media screen and (max-width: 1050px) {
+   .nav .nav__menu {
+      display: none;
+   }
+
+   .nav .nav__menu.open {
+      position: absolute;
+      display: block;
+      right: 0;
+      top: 0;
+      z-index: 1;
+      background: linear-gradient(180deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+      height: 50vh;
+      padding-top: 2rem;
+      padding-left: 2rem;
+   }
+
+   .nav .nav__menu .nav__links {
+      font-family: var(--raleway-light);
+      font-weight: 300;
+      flex-direction: column;
+   }
+
+   .nav__menu .nav__links .nav__link {
+      margin-top: 1em;
+   }
+
+   .nav__menu .nav__links .nav__link + .nav__link {
+      margin-left: 0em;
+   }
+
+   /* ----------- Hamburger menu animations --------- */
+
+   .burger {
+      display: block;
+      pointer-events: all;
+      cursor: pointer;
+      z-index: 2;
+   }
+
+   .burger.open .burger1 {
+      transform: rotate(45deg);
+   }
+
+   .burger.open .burger2 {
+      opacity: 0;
+   }
+
+   .burger.open .burger3 {
+      transform: rotate(-45deg) translateY(-8px);
+   }
+}
