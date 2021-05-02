@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './Projects.css';
-import Modal from '../Modal/Modal';
+import Modal from '../../Modal/Modal';
 import AddProjectForm from './AddProjectForm/AddProjectForm';
 import Project from './Project/Project';
 import { useSelector } from 'react-redux';
-import {
-   FETCH_ALL_PROJECTS,
-   selectProjects,
-} from '../../features/projects/projectSlice';
+import { FETCH_ALL_PROJECTS, selectProjects } from '../Projects/projectSlice';
 import { useDispatch } from 'react-redux';
-import { FETCH_PASSWORD } from '../../features/password/passwordSlice';
-import { motion } from 'framer-motion';
-import { variants } from '../PageTransitions/PageTransitions';
+import { FETCH_PASSWORD } from '../../Contact/Form/Password/passwordSlice';
 
 const Projects = () => {
    const projects = useSelector(selectProjects);
@@ -27,12 +22,7 @@ const Projects = () => {
    const [isModalOpen, setIsModalOpen] = useState(false);
 
    return (
-      <motion.section
-         className='projects'
-         initial='hidden'
-         animate='visible'
-         variants={variants}
-      >
+      <section className='projects'>
          <div className='container'>
             <h1 className='py-1em'>Projects</h1>
             <div className='search-box'>
@@ -107,7 +97,7 @@ const Projects = () => {
                onClick={() => setIsModalOpen(true)}
             ></i>
          </div>
-      </motion.section>
+      </section>
    );
 };
 

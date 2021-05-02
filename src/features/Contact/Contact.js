@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import Modal from '../Modal/Modal';
 import SubmitMessage from './SubmitMessage/SubmitMessage';
 import './Contact.css';
-import { sendMessage } from '../../features/contact/contactAPI';
-import { motion } from 'framer-motion';
-import { variants } from '../PageTransitions/PageTransitions';
+import { sendMessage } from '../../features/Contact/Form/Contact/contactAPI';
 
 const Contact = () => {
    const [isModalOpen, setIsModalOpen] = useState(false);
@@ -29,12 +27,7 @@ const Contact = () => {
       });
    };
    return (
-      <motion.section
-         className='contact'
-         initial='hidden'
-         animate='visible'
-         variants={variants}
-      >
+      <section className='contact'>
          <div className='container'>
             <h1>Get in touch</h1>
             <form onSubmit={handleSubmit} method='POST' autoComplete='off'>
@@ -81,7 +74,7 @@ const Contact = () => {
          <Modal open={isModalOpen} onClose={() => setIsModalOpen(false)}>
             <SubmitMessage />
          </Modal>
-      </motion.section>
+      </section>
    );
 };
 

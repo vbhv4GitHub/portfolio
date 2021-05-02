@@ -1,17 +1,11 @@
 import React from 'react';
 import './About.css';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { variants } from '../PageTransitions/PageTransitions';
 
 const About = () => {
    return (
-      <motion.section
-         className='about'
-         initial='hidden'
-         animate='visible'
-         variants={variants}
-      >
+      <section className='about'>
+         <div id='about__background'></div>
          <div className='container'>
             <h1>About Me</h1>
             <p>
@@ -27,7 +21,7 @@ const About = () => {
             </p>
 
             <Link
-               className='btn btn-ghost btn-square'
+               className='btn btn-ghost'
                to="../../assets/pdfs/vbhv4WebDevresume'.pdf"
                target='_blank'
                download
@@ -35,7 +29,7 @@ const About = () => {
                Resume'&darr;
             </Link>
          </div>
-      </motion.section>
+      </section>
    );
 };
 

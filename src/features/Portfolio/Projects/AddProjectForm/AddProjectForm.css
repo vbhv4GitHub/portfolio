@@ -1,0 +1,39 @@
+.addProjectForm > * {
+   margin-top: 1em;
+}
+
+.addProjectForm {
+   font-size: 1.3rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   background: hsl(0, 0%, 13%);
+   padding: 2rem 0rem;
+   border-radius: 1em;
+   width: 320px;
+   color: white;
+   font-family: var(--raleway-light);
+}
+
+.addProjectForm input {
+   padding: 0.5em 0.5em;
+   width: 80%;
+}
+
+.addProjectForm button {
+   display: block;
+   font-size: 1rem;
+   width: 80%;
+}
+.addProjectForm button + button {
+   margin-top: 0.5em;
+}
+
+.addProjectForm .btn:disabled {
+   background: gray;
+}
+.addProjectForm .btn:disabled:hover {
+   opacity: 1;
+   cursor: none;
+}

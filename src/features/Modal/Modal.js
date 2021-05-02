@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import { motion } from 'framer-motion';
-import { variant2 } from '../PageTransitions/PageTransitions';
 
 const MODAL_STYLES = {
    position: 'fixed',
@@ -26,12 +24,7 @@ const Modal = ({ open, children, onClose }) => {
    return ReactDom.createPortal(
       <>
          <div style={OVERLAY_STYLES} />
-         <motion.div
-            style={MODAL_STYLES}
-            initial='hidden'
-            animate='visible'
-            variants={variant2}
-         >
+         <div style={MODAL_STYLES}>
             <button
                style={{ marginLeft: '263px', display: 'block' }}
                className='btn btn-red'
@@ -40,7 +33,7 @@ const Modal = ({ open, children, onClose }) => {
                Close
             </button>
             {children}
-         </motion.div>
+         </div>
       </>,
       document.getElementById('portal')
    );
