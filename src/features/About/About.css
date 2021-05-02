@@ -17,3 +17,16 @@
    background-size: cover;
    background-position: center;
 }
+
+.about .container {
+   display: flex;
+   flex-direction: column;
+   padding: 0 20vw;
+   justify-content: center;
+   align-items: center;
+   height: 90vh;
+}
+
+.about .container p {
+   font-size: 1.3rem;
+}

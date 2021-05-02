@@ -6,6 +6,7 @@ import Navbar from './features/Navbar/Navbar';
 import About from './features/About/About';
 import Projects from './features/Portfolio/Projects/Projects';
 import Contact from './features/Contact/Contact';
+import Footer from './features/Footer/Footer';
 
 function App() {
    return (
@@ -18,7 +19,7 @@ function App() {
                <Route path='/about' exact component={About} />
                <Route path='/' exact component={Hero} />
             </Switch>
-            {/* <Footer /> */}
+            <Footer />
          </div>
       </Router>
    );

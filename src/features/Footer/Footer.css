@@ -1,0 +1,20 @@
+.footer {
+   min-height: 10vh;
+}
+
+.footer .container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 10vh;
+}
+
+.footer .container i {
+   cursor: pointer;
+}
+
+.footer .container i:hover,
+.footer .container i:focus {
+   color: var(--blue-5);
+   transform: scale(1.05);
+}
