@@ -32,7 +32,9 @@ const Contact = () => {
             <div className='background__overlay'></div>
          </div>
          <div className='container'>
-            <h1>Get in touch</h1>
+            <div className='title'>
+               <h1>Get in touch</h1>
+            </div>
             <form
                onSubmit={handleSubmit}
                method='POST'

@@ -23,8 +23,13 @@ const Projects = () => {
 
    return (
       <section className='projects'>
+         <div id='projects__background'>
+            <div className='background__overlay'></div>
+         </div>
          <div className='container'>
-            <h1 className='py-1em'>Projects</h1>
+            <div className='title'>
+               <h1>Projects</h1>
+            </div>
             <div className='search-box'>
                <input
                   type='text'

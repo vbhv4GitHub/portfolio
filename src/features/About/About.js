@@ -9,7 +9,9 @@ const About = () => {
             <div className='background__overlay'></div>
          </div>
          <div className='container'>
-            <h1>About Me</h1>
+            <div className='title'>
+               <h1>About Me</h1>
+            </div>
             <p>
                I love developing websites, and I'm an aspiring MERN stack
                developer. I have been creating websites since November 2020 and
@@ -23,7 +25,7 @@ const About = () => {
             </p>
 
             <Link
-               className='btn btn-ghost'
+               className='btn btn-lg btn-primary'
                to="../../assets/pdfs/vbhv4WebDevresume'.pdf"
                target='_blank'
                download

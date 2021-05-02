@@ -33,7 +33,8 @@
 .addProjectForm .btn:disabled {
    background: gray;
 }
-.addProjectForm .btn:disabled:hover {
+.addProjectForm .btn:disabled:hover,
+.addProjectForm .btn[disabled]:hover {
    opacity: 1;
-   cursor: none;
+   pointer-events: none;
 }

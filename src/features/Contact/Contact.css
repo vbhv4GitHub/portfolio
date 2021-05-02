@@ -5,7 +5,7 @@
 
 .contact .container {
    display: flex;
-   justify-content: space-around;
+   justify-content: flex-start;
    align-items: center;
    flex-direction: column;
    min-height: 90vh;
