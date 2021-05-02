@@ -124,12 +124,16 @@ const AddProjectForm = ({ currentId, setCurrentId }) => {
             {/* <input type='file' id='img' name='img' accept='image/*' /> */}
             <button
                type='submit'
-               className='btn btn-primary'
+               className='btn btn-primary btn-fullWidth btn-lg'
                disabled={retrievePassword() ? false : true}
             >
                Submit
             </button>
-            <button type='reset' className='btn btn-secondary' onClick={clear}>
+            <button
+               type='reset'
+               className='btn btn-secondary btn-fullWidth'
+               onClick={clear}
+            >
                Clear
             </button>
          </form>

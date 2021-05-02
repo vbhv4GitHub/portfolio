@@ -27,7 +27,7 @@ const Modal = ({ open, children, onClose }) => {
          <div style={MODAL_STYLES}>
             <button
                style={{ marginLeft: '263px', display: 'block' }}
-               className='btn btn-red'
+               className='btn btn-secondary'
                onClick={onClose}
             >
                Close
