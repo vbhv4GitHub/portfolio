@@ -1,0 +1,38 @@
+.about {
+   min-height: 90vh;
+}
+
+.about .container h1 {
+   text-transform: capitalize;
+   margin: 1em 0em;
+   font-size: 2.1em;
+   font-family: var(--roboto);
+}
+
+.about p {
+   padding: 0em 13em;
+   text-align: left;
+   font-family: var(--roboto);
+   font-weight: 300;
+   line-height: 1.6em;
+}
+
+.about .btn {
+   animation: float 3s ease-in-out infinite;
+   margin: 1em 0em;
+}
+
+@keyframes float {
+   0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+   }
+   50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: translatey(-10px);
+   }
+   100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+   }
+}

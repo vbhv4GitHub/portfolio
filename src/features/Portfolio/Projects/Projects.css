@@ -1,0 +1,209 @@
+.projects {
+   min-height: 90vh;
+   font-family: var(--raleway-light);
+}
+
+.projects .container {
+   max-width: 1500px;
+   width: 90vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+   text-align: center;
+}
+
+body {
+   background-color: hsl(0, 0%, 5%);
+}
+
+.projects .container h1 {
+   text-transform: capitalize;
+   margin: 1em 0em;
+   font-size: 2.1em;
+   font-family: var(--roboto);
+}
+
+/* ---------------- Search Box ---------- */
+.search-box {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.search-box i {
+   color: black;
+   margin-left: -2rem;
+}
+
+.search-box input {
+   width: 34%;
+   font-size: 1rem;
+   padding-left: 0.5em;
+}
+
+@media screen and (max-width: 600px) {
+   .search-box input {
+      width: 80%;
+   }
+}
+
+/* --------- Grid stlyling ------- */
+
+.cards {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 1em;
+   justify-items: center;
+   align-items: center;
+   margin-top: 8rem;
+   margin-bottom: 2rem;
+   align-items: center;
+}
+
+@media screen and (max-width: 920px) {
+   .cards {
+      grid-template-columns: 1fr 1fr;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .cards {
+      grid-template-columns: 1fr;
+   }
+}
+
+.card {
+   position: relative;
+   overflow: hidden;
+   min-width: 280px;
+   max-width: 400px;
+   border-radius: 0.3em;
+}
+
+.card p,
+.card i {
+   font-size: 1rem;
+   color: hsl(0, 0%, 87%);
+   margin: 0.2em 0.5em;
+}
+
+.card .card__img-overlay i {
+   font-size: 1.5rem;
+}
+
+.card .card__img {
+   display: block;
+   width: 100%;
+   transition: blur 300ms ease-in;
+   max-height: 100%;
+}
+
+.blur_img {
+   filter: blur(5px);
+}
+
+.card .card__img-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.6);
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   opacity: 0;
+   transition: opacity 300ms ease-in;
+}
+
+.card__img-overlay > * {
+   transform: translateY(20px);
+   transition: transform 300ms ease-in;
+}
+
+.card .card__img-overlay:hover,
+.card .card__img-overlay:focus-within {
+   opacity: 1;
+}
+
+.card__img-overlay:hover > *,
+.card__img-overlay:focus-within > * {
+   transform: translateY(0);
+}
+
+.card .card__title {
+   text-transform: uppercase;
+   margin: 1em 0em;
+}
+.card .card__tags {
+   padding: 0em 0.8em;
+}
+
+.card .card__links i {
+   cursor: pointer;
+   margin-top: 0.3em;
+   transition: all 0.3 ease-in;
+}
+
+.card .card__links i:hover {
+   transform: scale(0.9);
+   opacity: 0.8;
+}
+.card .card__links i + i {
+   margin-left: 0.3em;
+}
+
+.projects #addNewProjectBtn {
+   color: var(--green-mild);
+   margin: 5rem 0rem;
+   cursor: pointer;
+}
+
+/* -------------- Styling for CSS loader ------------- */
+
+.lds-facebook {
+   display: inline-block;
+   position: relative;
+   width: 80px;
+   height: 80px;
+   align-self: center;
+   justify-self: center;
+   grid-column: 1/4;
+}
+.lds-facebook div {
+   display: inline-block;
+   position: absolute;
+   left: 8px;
+   width: 16px;
+   background: #fff;
+   animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+   left: 8px;
+   animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+   left: 32px;
+   animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+   left: 56px;
+   animation-delay: 0;
+}
+@keyframes lds-facebook {
+   0% {
+      top: 8px;
+      height: 64px;
+   }
+   50%,
+   100% {
+      top: 24px;
+      height: 32px;
+   }
+}
