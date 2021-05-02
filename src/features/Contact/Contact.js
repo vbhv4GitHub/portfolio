@@ -28,9 +28,17 @@ const Contact = () => {
    };
    return (
       <section className='contact'>
+         <div id='contact__background'>
+            <div className='background__overlay'></div>
+         </div>
          <div className='container'>
             <h1>Get in touch</h1>
-            <form onSubmit={handleSubmit} method='POST' autoComplete='off'>
+            <form
+               onSubmit={handleSubmit}
+               method='POST'
+               autoComplete='off'
+               className='form'
+            >
                <input
                   type='text'
                   name='name'
@@ -59,11 +67,14 @@ const Contact = () => {
                      setFormData({ ...formData, message: e.target.value })
                   }
                ></textarea>
-               <button className='btn btn-blue btn-square' type='submit'>
+               <button
+                  className='btn btn-primary btn-lg btn-fullWidth'
+                  type='submit'
+               >
                   Submit
                </button>
                <button
-                  className='btn btn-red btn-square'
+                  className='btn btn-secondary btn-fullWidth'
                   type='reset'
                   onClick={clear}
                >

@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom';
 const About = () => {
    return (
       <section className='about'>
-         <div id='about__background'></div>
+         <div id='about__background'>
+            <div className='background__overlay'></div>
+         </div>
          <div className='container'>
             <h1>About Me</h1>
             <p>

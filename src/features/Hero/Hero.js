@@ -7,7 +7,9 @@ import './Hero.css';
 const Hero = () => {
    return (
       <section className='hero'>
-         <div id='hero__background'></div>
+         <div id='hero__background'>
+            <div className='background__overlay'></div>
+         </div>
          <div className='container'>
             <div className='hero__image'></div>
             <div className='hero__intro'>
