@@ -28,9 +28,12 @@
    min-height: 90vh;
 }
 
-.hero .container .hero__image,
+.hero .container .hero__image {
+   flex: 1 1 40%;
+   min-width: 300px;
+}
 .hero .container .hero__intro {
-   flex: 1 1 50%;
+   flex: 1 1 60%;
    min-width: 300px;
 }
 
@@ -38,4 +41,24 @@
    position: absolute;
    right: 10vw;
    bottom: 10vh;
+}
+
+.hero .hero__intro h1 {
+   font-family: 'Fira Code', monospace;
+}
+
+.hero span.yellow {
+   color: #e2d70b;
+}
+.hero span.light-yellow {
+   color: #dcca86;
+}
+.hero span.light-blue {
+   color: #68cdfe;
+}
+.hero span.blue {
+   color: #569cd6;
+}
+.hero span.pink {
+   color: #c270c5;
 }
