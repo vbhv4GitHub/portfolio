@@ -15,6 +15,6 @@
 }
 
 .submitMessage h4 {
-   color: var(--green-light);
+   color: hsl(84, 69%, 49%);
    font-weight: 300;
 }

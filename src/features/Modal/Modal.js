@@ -26,7 +26,7 @@ const Modal = ({ open, children, onClose }) => {
          <div style={OVERLAY_STYLES} />
          <div style={MODAL_STYLES}>
             <button
-               style={{ marginLeft: '263px', display: 'block' }}
+               style={{ marginLeft: '240px', display: 'block' }}
                className='btn btn-secondary'
                onClick={onClose}
             >

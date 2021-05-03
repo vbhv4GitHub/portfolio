@@ -15,8 +15,8 @@ const Contact = () => {
    const handleSubmit = (e) => {
       e.preventDefault();
       setIsModalOpen(true);
-      sendMessage(formData);
       clear();
+      sendMessage(formData);
    };
 
    const clear = () => {
@@ -46,6 +46,7 @@ const Contact = () => {
                   name='name'
                   placeholder='Name'
                   required
+                  value={formData.name}
                   onChange={(e) =>
                      setFormData({ ...formData, name: e.target.value })
                   }
@@ -54,6 +55,7 @@ const Contact = () => {
                   type='email'
                   name='email'
                   placeholder='Email'
+                  value={formData.email}
                   required
                   onChange={(e) =>
                      setFormData({ ...formData, email: e.target.value })
@@ -64,6 +66,7 @@ const Contact = () => {
                   cols='30'
                   rows='5'
                   placeholder='Message'
+                  value={formData.message}
                   required
                   onChange={(e) =>
                      setFormData({ ...formData, message: e.target.value })
