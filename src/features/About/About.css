@@ -10,7 +10,6 @@
    left: 0;
    right: 0;
    bottom: 0;
-   /* background-color: rgba(0, 0, 0, 0.5); */
    background-image: url('../../assets/images/coding1.jpg');
    z-index: -1;
    background-repeat: no-repeat;
@@ -25,4 +24,28 @@
    justify-content: flex-start;
    align-items: center;
    height: 90vh;
+}
+
+.about .container p {
+   font-size: 1.3rem;
+}
+
+.about .container .btn {
+   margin: 2em 0em;
+}
+
+@media screen and (max-width: 1000px) {
+   .about .container {
+      padding: 0 20vw;
+   }
+}
+@media screen and (max-width: 800px) {
+   .about .container {
+      padding: 0 10vw;
+   }
+}
+@media screen and (max-width: 600px) {
+   .about .container {
+      padding: 0 5vw;
+   }
 }

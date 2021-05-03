@@ -23,7 +23,6 @@ const About = () => {
                to me. I believe everything is changing. And all I know for sure
                is to never stop learning and having curiosity.
             </p>
-
             <Link
                className='btn btn-lg btn-primary'
                to="../../assets/pdfs/vbhv4WebDevresume'.pdf"
