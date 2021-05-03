@@ -21,12 +21,8 @@
 .about .container {
    display: flex;
    flex-direction: column;
-   padding: 0 20vw;
+   padding: 0 30vw;
    justify-content: flex-start;
    align-items: center;
    height: 90vh;
-}
-
-.about .container p {
-   font-size: 2rem;
 }

@@ -30,11 +30,19 @@
 
 .hero .container .hero__image {
    flex: 1 1 40%;
-   min-width: 300px;
 }
 .hero .container .hero__intro {
    flex: 1 1 60%;
    min-width: 300px;
+}
+
+@media screen and(max-width: 800px) {
+   .hero .container .hero__image {
+      display: none;
+   }
+   .hero .container .hero__intro {
+      min-width: 300px;
+   }
 }
 
 .hero .container .hero__intro .btn-neon {

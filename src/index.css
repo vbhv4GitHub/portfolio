@@ -49,18 +49,18 @@
    --pt-serif: 'PT Serif', serif;
 
    /* --------- Sizes ----------- */
-   --super-heading: 5.5rem;
-   --h1: 3.4rem;
-   --h2: 2.75rem;
-   --h3: 2.1rem;
-   --h4: 1.7rem;
+   --super-heading: 3.4rem;
+   --h1: 2.1rem;
+   --h2: 1.7rem;
+   --h3: 1.3rem;
+   --h4: 1.05rem;
 }
 
 html,
 body {
    font-family: 'PT Serif', serif;
    color: var(--color-light);
-   font-size: 0.854vw;
+   font-size: 1.171vw;
    scroll-behavior: smooth;
 }
 
