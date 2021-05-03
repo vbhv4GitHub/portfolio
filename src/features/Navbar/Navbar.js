@@ -29,13 +29,13 @@ const Navbar = () => {
 
             <div id='nav_menu' className='nav__menu'>
                <ul className='nav__links'>
-                  <Link className='nav__link' to='/about'>
+                  <Link className='nav__link underline' to='/about'>
                      <li>About Me</li>
                   </Link>
-                  <Link className='nav__link' to='/projects'>
+                  <Link className='nav__link underline' to='/projects'>
                      <li>Projects</li>
                   </Link>
-                  <Link className='nav__link' to='/contact'>
+                  <Link className='nav__link underline' to='/contact'>
                      <li>Contact</li>
                   </Link>
                   <Link

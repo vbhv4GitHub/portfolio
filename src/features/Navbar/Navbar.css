@@ -37,8 +37,8 @@
    text-transform: uppercase;
 }
 
-.nav__menu .nav__links .nav__link::after,
-.nav__menu .nav__links .nav__link::after {
+.nav__menu .nav__links .nav__link.underline::after,
+.nav__menu .nav__links .nav__link.underline::after {
    pointer-events: none;
    content: '';
    position: absolute;
@@ -92,13 +92,12 @@
    }
 
    .nav .nav__menu .nav__links {
-      font-weight: 300;
       flex-direction: column;
-      margin-right: 0.8em;
+      margin-right: 1em;
    }
 
    .nav__menu .nav__links .nav__link {
-      margin-top: 1em;
+      margin-top: 2.1em;
    }
 
    .nav__menu .nav__links .nav__link + .nav__link {

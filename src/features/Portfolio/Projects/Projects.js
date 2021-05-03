@@ -98,7 +98,7 @@ const Projects = () => {
 
             <i
                id='addNewProjectBtn'
-               className='fas fa-plus-circle fa-2x'
+               className='fas fa-plus-circle fa-3x'
                onClick={() => setIsModalOpen(true)}
             ></i>
          </div>
