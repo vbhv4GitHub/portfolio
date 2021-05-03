@@ -28,20 +28,9 @@
    min-height: 90vh;
 }
 
-.hero .container .hero__image {
-   flex: 1 1 40%;
-}
-.hero .container .hero__intro {
-   flex: 1 1 60%;
-   min-width: 300px;
-}
-
-@media screen and(max-width: 800px) {
-   .hero .container .hero__image {
-      display: none;
-   }
-   .hero .container .hero__intro {
-      min-width: 300px;
+@media screen and (max-width: 500px) {
+   .hero .container .hero__intro h1 {
+      font-size: 1.5rem;
    }
 }
 

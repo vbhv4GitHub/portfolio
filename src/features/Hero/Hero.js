@@ -11,7 +11,6 @@ const Hero = () => {
             <div className='background__overlay'></div>
          </div>
          <div className='container'>
-            <div className='hero__image'></div>
             <div className='hero__intro'>
                <h1>
                   <span className='blue'>function</span>
@@ -46,7 +45,7 @@ const Hero = () => {
                   ; <br />
                   <span className='yellow'>{'}'}</span>
                </h1>
-               <button className='btn btn-neon btn-xs'>Read More</button>
+               <button className='btn btn-neon btn-lg'>Read More</button>
             </div>
          </div>
       </section>
