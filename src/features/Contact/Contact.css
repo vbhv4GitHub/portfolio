@@ -27,17 +27,6 @@
 }
 
 .contact .form {
-   padding: 0 30%;
-}
-
-@media screen and (max-width: 800px) {
-   .contact .form {
-      padding: 0 40%;
-   }
-}
-
-@media screen and (max-width: 500px) {
-   .contact .form {
-      padding: 0 5%;
-   }
+   width: 300px;
+   padding: 0;
 }
