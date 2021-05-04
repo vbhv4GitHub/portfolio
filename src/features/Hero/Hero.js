@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-// import &rcub; Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import { motion } from 'framer-motion';
 // import { variants } from '../PageTransitions/PageTransitions';
 
@@ -45,7 +45,9 @@ const Hero = () => {
                   ; <br />
                   <span className='yellow'>{'}'}</span>
                </h1>
-               <button className='btn btn-neon btn-lg'>Read More</button>
+               <Link className='nav__link underline' to='/projects'>
+                  <button className='btn btn-neon btn-lg'>MY WORKS</button>
+               </Link>
             </div>
          </div>
       </section>

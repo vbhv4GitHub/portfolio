@@ -160,7 +160,6 @@
 }
 
 .projects #addNewProjectBtn {
-   color: var(--green-mild);
    margin: 5rem 0rem;
    cursor: pointer;
 }

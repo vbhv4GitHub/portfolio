@@ -61,7 +61,7 @@ const AddProjectForm = ({ currentId, setCurrentId }) => {
    return (
       <div>
          <form className='addProjectForm' onSubmit={handleSubmit}>
-            <h1>{currentId ? 'Edit' : 'Add'} Project</h1>
+            <h2>{currentId ? 'Edit' : 'Add'} Project</h2>
             <input
                required
                type='text'
@@ -106,6 +106,7 @@ const AddProjectForm = ({ currentId, setCurrentId }) => {
                   setProjectData({ ...projectData, link: e.target.value })
                }
             />
+
             <input
                required
                type='password'
@@ -114,6 +115,14 @@ const AddProjectForm = ({ currentId, setCurrentId }) => {
                value={password}
                onChange={(e) => setPassword(e.target.value)}
             />
+            {password === '' ? (
+               <p>Please fill in correct password to enable submission.</p>
+            ) : retrievePassword() ? (
+               <p className='valid'>Correct Password!!!</p>
+            ) : (
+               <p>Wrong Password!!!</p>
+            )}
+
             <FileBase
                type='file'
                multiple={false}

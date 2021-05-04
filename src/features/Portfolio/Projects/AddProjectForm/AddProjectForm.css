@@ -1,17 +1,30 @@
 .addProjectForm {
    font-size: 1.3rem;
    background: hsl(0, 0%, 13%);
-   padding: 2rem;
+   padding: 8%;
    border-radius: 1em;
    width: 320px;
 }
 
 .addProjectForm .btn:disabled {
    background: var(--blue-5);
+   color: #828282;
 }
 
 .addProjectForm .btn:disabled:hover,
 .addProjectForm .btn[disabled]:hover {
-   color: lightslategray;
    pointer-events: none;
+   border: none;
+   box-shadow: none;
+}
+
+.addProjectForm p {
+   font-size: 10px;
+   text-align: left;
+   margin-top: 5px;
+   color: #ba262b;
+}
+
+.addProjectForm p.valid {
+   color: rgb(58, 131, 58);
 }

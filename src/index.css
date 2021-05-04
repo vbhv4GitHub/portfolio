@@ -230,10 +230,9 @@ button:focus {
 }
 
 .btn-primary {
-   --btn-background: var(--blue-3);
+   --btn-background: var(--blue-2);
    --btn-text-color: var(--color-light);
    border: currentColor;
-   color: var(--color-dark);
 }
 
 .btn-secondary {

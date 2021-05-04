@@ -13,11 +13,11 @@ const About = () => {
                <h1>About Me</h1>
             </div>
             <p>
-               I love developing websites, and I'm an aspiring MERN stack
-               developer. I have been creating websites since November 2020 and
-               have some work experience with WordPress development. Currently,
-               I'm looking for a job or an internship for full stack
-               development.
+               Hi, my name is Vaibhav Yadav. I love developing websites, and I'm
+               an aspiring MERN stack developer. I have been creating websites
+               since November 2020 and have some work experience with WordPress
+               development. Currently, I'm looking for a job or an internship
+               for full stack development.
                <br />
                <br />I don't have a college degree but that doesn't matter much
                to me. I believe everything is changing. And all I know for sure
