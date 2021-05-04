@@ -13,6 +13,18 @@
    justify-content: flex-start;
    align-items: center;
    flex: 1 1 30%;
+   padding-top: 1em;
+}
+
+.nav .nav__logo img {
+   max-height: 55px;
+   max-width: 55px;
+   cursor: pointer;
+}
+
+.nav .nav__logo img:hover,
+.nav .nav__logo img:focus {
+   transform: scale(1.1);
 }
 
 .nav .nav__menu,
@@ -85,8 +97,8 @@
       right: 0;
       top: 0;
       z-index: 1;
-      background: linear-gradient(180deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-      height: 50vh;
+      background: linear-gradient(180deg, var(--blue-3), rgba(0, 0, 0, 0));
+      height: 100vh;
       padding-top: 2rem;
       padding-left: 2rem;
    }
