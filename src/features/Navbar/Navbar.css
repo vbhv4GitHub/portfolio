@@ -67,7 +67,7 @@
 
 .burger > * {
    height: 0.1rem;
-   background: white;
+   background: var(--color-light) !important;
    width: 2rem;
    opacity: 1;
    margin-bottom: 0.3rem;
