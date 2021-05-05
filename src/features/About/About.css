@@ -28,10 +28,16 @@
 
 .about .container p {
    font-size: 1rem;
+   text-indent: 3em;
 }
 
 .about .container .btn {
    margin: 2em 0em;
+   display: inline-block;
+}
+
+.about .container .btn.btn-secondary {
+   margin-left: 2em;
 }
 
 @media screen and (max-width: 1000px) {

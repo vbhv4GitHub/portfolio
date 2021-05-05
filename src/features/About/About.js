@@ -13,24 +13,43 @@ const About = () => {
                <h1>About Me</h1>
             </div>
             <p>
-               Hi, my name is Vaibhav Yadav. I love developing websites, and I'm
-               an aspiring MERN stack developer. I have been creating websites
-               since November 2020 and have some work experience with WordPress
-               development. Currently, I'm looking for a job or an internship
-               for full stack development.
-               <br />
-               <br />I don't have a college degree but that doesn't matter much
-               to me. I believe everything is changing. And all I know for sure
-               is to never stop learning and having curiosity.
+               Hi, I'm Vaibhav, a MERN stack web developer, and a passionate
+               coder. I got into coding when I was sixteen. One could say that
+               C++ is my first love.{' '}
             </p>
-            <Link
-               className='btn btn-lg btn-primary'
-               to="../../assets/pdfs/vbhv4WebDevresume'.pdf"
-               target='_blank'
-               download
-            >
-               Resume'&darr;
-            </Link>
+            <br />
+            <p>
+               In the year 2020, I got hired for the job of WordPress developer
+               at a local IT firm. That's when I realized how fun web
+               development could be. Since then, I'm on my path to master coding
+               websites. I love to solve problems. Maybe that's why I love to
+               play chess and solve sudoku puzzles.{' '}
+            </p>
+            <br />
+
+            <p>
+               I understand that in this industry, being omniscient is
+               impossible. There is always something new for me, and it will
+               always be that way. I'm willing to learn more, take my skills to
+               the next level. Ergo, I'm seeking a web developer position, which
+               could be an internship to grow my career.{' '}
+            </p>
+            <div>
+               <Link to='/contact'>
+                  <button className='btn btn-lg btn-primary'>
+                     Get in touch
+                  </button>
+               </Link>
+               <Link
+                  to="../../assets/pdfs/vbhv4WebDevresume'.pdf"
+                  target='_blank'
+                  download
+               >
+                  <button className='btn btn-lg btn-secondary'>
+                     Resume'&darr;
+                  </button>
+               </Link>
+            </div>
          </div>
       </section>
    );
