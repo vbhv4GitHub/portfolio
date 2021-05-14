@@ -10,7 +10,7 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background-image: url('../../assets/images/escr.jpg');
+   background-image: url('../../assets/images/about.jpg');
    z-index: -1;
    background-repeat: no-repeat;
    background-size: cover;
@@ -20,7 +20,7 @@
 .about .container {
    display: flex;
    flex-direction: column;
-   padding: 0 30vw;
+   padding: 0 20%;
    justify-content: flex-start;
    align-items: center;
    height: 90vh;
@@ -40,18 +40,24 @@
    margin-left: 2em;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1366px) {
    .about .container {
-      padding: 0 20vw;
+      padding: 0 25%;
    }
 }
+@media screen and (max-width: 1000px) {
+   .about .container {
+      padding: 0 20%;
+   }
+}
+
 @media screen and (max-width: 800px) {
    .about .container {
-      padding: 0 10vw;
+      padding: 0 10%;
    }
 }
 @media screen and (max-width: 600px) {
    .about .container {
-      padding: 0 5vw;
+      padding: 0 5%;
    }
 }
