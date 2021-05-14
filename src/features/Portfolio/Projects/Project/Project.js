@@ -7,10 +7,7 @@ const Project = ({ project, setCurrentId, setIsModalOpen }) => {
       <>
          <div className='card'>
             <img className='card__img' src={project.image} alt='' />
-            <p>
-               <i className='far fa-clock'></i>
-               {moment(project.addedAt).fromNow()}
-            </p>
+
             <div className='card__img-overlay'>
                <h3 className='card__title'>{project.title}</h3>
                <p className='card__tags'>
@@ -18,15 +15,15 @@ const Project = ({ project, setCurrentId, setIsModalOpen }) => {
                </p>
                <div className='card__links'>
                   <i
-                     className='fab fa-github fa-2x'
+                     className='fab fa-github fa-3x'
                      onClick={() => window.open(`${project.github}`, '_blank')}
                   ></i>
                   <i
-                     className='fas fa-binoculars fa-2x'
+                     className='fas fa-binoculars fa-3x'
                      onClick={() => window.open(`${project.link}`, '_blank')}
                   ></i>
                   <i
-                     className='far fa-edit fa-2x'
+                     className='far fa-edit fa-3x'
                      onClick={() => {
                         setCurrentId(`${project._id}`);
                         setIsModalOpen(true);
@@ -34,6 +31,10 @@ const Project = ({ project, setCurrentId, setIsModalOpen }) => {
                   ></i>
                </div>
             </div>
+            <p className='timestamp'>
+               <i className='far fa-clock'></i>
+               {moment(project.addedAt).fromNow()}
+            </p>
          </div>
       </>
    );

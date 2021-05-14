@@ -63,10 +63,6 @@ const Projects = () => {
                         const lowercased = project.tags.map((tag) =>
                            tag.toLowerCase()
                         );
-                        // const result = terms.every((val) => {
-                        //    console.log(lowercased.includes(val));
-                        //    return lowercased.includes(val);
-                        // });
 
                         const result = terms.every(
                            (val) =>

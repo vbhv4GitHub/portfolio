@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import './Modal.css';
 
 const MODAL_STYLES = {
    position: 'fixed',
@@ -26,8 +27,7 @@ const Modal = ({ open, children, onClose }) => {
          <div style={OVERLAY_STYLES} />
          <div style={MODAL_STYLES}>
             <button
-               style={{ marginLeft: '240px', display: 'block' }}
-               className='btn btn-secondary'
+               className='btn btn-secondary modal-close-btn'
                onClick={onClose}
             >
                Close

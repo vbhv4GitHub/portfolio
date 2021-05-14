@@ -232,13 +232,13 @@ button:focus {
 .btn-primary {
    --btn-background: var(--blue-2);
    --btn-text-color: var(--color-light);
-   border: currentColor;
+   /* border: currentColor; */
 }
 
 .btn-secondary {
    --btn-background: var(--pink-2);
    --btn-text-color: var(--color-light);
-   border: currentColor;
+   /* border: currentColor; */
    color: var(--color-dark);
 }
 

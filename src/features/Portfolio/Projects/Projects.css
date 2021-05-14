@@ -90,8 +90,18 @@
    margin: 0.2em 0.5em;
 }
 
+.card p.timestamp {
+   position: absolute;
+   width: 110%;
+   bottom: 0rem;
+   background: hsla(0, 0%, 0%, 0.55);
+   display: inline;
+   margin: 0 auto;
+   transform: translate(-50%);
+}
+
 .card .card__img-overlay i {
-   font-size: 1.5rem;
+   font-size: 2rem;
 }
 
 .card .card__img {

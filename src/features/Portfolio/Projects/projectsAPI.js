@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = 'http://localhost:5000/projects';
+const url = 'https://vbhv4991-portfolio-api.herokuapp.com/projects';
 
 export const fetchProjects = () => axios.get(url);
 export const addProject = (newProject) => axios.post(url, newProject);
