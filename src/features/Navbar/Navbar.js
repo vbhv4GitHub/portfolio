@@ -39,7 +39,7 @@ const Navbar = () => {
                   </Link>
                   <Link
                      className='nav__link'
-                     to="../../assets/pdfs/vbhv4WebDevresume'.pdf"
+                     to='/assets/pdfs/vbhvResume.pdf'
                      target='_blank'
                      download
                   >

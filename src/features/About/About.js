@@ -40,11 +40,7 @@ const About = () => {
                      Get in touch
                   </button>
                </Link>
-               <Link
-                  to="../../assets/pdfs/vbhv4WebDevresume'.pdf"
-                  target='_blank'
-                  download
-               >
+               <Link to='/assets/pdfs/vbhvResume.pdf' target='_blank' download>
                   <button className='btn btn-lg btn-secondary'>
                      Resume'&darr;
                   </button>
