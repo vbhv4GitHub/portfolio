@@ -33,7 +33,7 @@ const Projects = () => {
             <div className='search-box'>
                <input
                   type='text'
-                  placeholder='Search by tags (HTML, CSS, MERN etc.)'
+                  placeholder='Search by tags (HTML, CSS, React etc.)'
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                />

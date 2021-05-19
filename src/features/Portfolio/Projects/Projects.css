@@ -55,7 +55,7 @@
 .cards {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   grid-gap: 1em;
+   grid-gap: 2.1em;
    justify-items: center;
    align-items: center;
    margin-top: 8rem;
